@@ -1,18 +1,11 @@
 // Auto-generated. Do not edit.
-declare namespace bluetooth {
+declare namespace sfloat {
 
     /**
-     * Starts a custom sensor service. The handler must call ``setSensorTemperature`` 
-     * to update the temperature sent to the service.
-     */
-    //% blockId=bluetooth_startTemperatureSensorService block="bluetooth temperature sensor service" shim=bluetooth::startTemperatureSensorService
-    function startTemperatureSensorService(handler: () => void): void;
-
-    /**
-     * Sets the current temperature value on the external temperature sensor
-     */
-    //% blockId=bluetooth_setTemperatureSensorValue block="bluetooth set temperature sensor value (°C) %temperature" shim=bluetooth::setTemperatureSensorValue
-    function setTemperatureSensorValue(temperature: number): void;
+    * Perform soft-float conversion
+    */
+    //% blockId=SoftFloat_IntToSFloat block="Integer to SoftFloat" shim=sfloat::IntToSFloat
+    function IntToSFloat(x: number): number;
 }
 
 // Auto-generated. Do not edit. Really.
